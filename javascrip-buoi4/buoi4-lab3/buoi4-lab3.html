@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>buoi4-lab3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #6c757d;
+            background-color: #fff;
+        }
+        .main-container {
+            width: 400px;
+          
+            overflow: hidden;
+            background-color: #f4f4f4;
+            border-radius: 4px;
+            padding: 30px;
+            text-align: center;
+        }
+        .title {
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+        #counter {
+            font-size: 80px;
+            margin: 20px 0;
+            color: #333333;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .btn {
+            width: 100px;
+            padding: 15px 20px;
+            border: 2px solid #6c757d;
+            background-color: #6c757d;
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            cursor: pointer;
+           
+            outline: none;
+            transition: all 0.3s ease-in;
+            border-radius: 4px;
+        }
+        .btn:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="main-container">
+        <h1 class="title">Đếm số</h1>
+        <h1 id="counter">0</h1>
+        <div class="btn-container">
+            <button class="btn counterBtn prevBtn" onclick="decreaseCounter()">Trừ</button>
+            <button class="btn counterBtn nextBtn" onclick="increaseCounter()">Cộng</button>
+        </div>
+    
+    </div>
+    <script src="buoi4-lab3.js"></script>
+</body>
+</html>

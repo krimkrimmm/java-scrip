@@ -1,0 +1,58 @@
+<!--Bài 1
+Nhấn phím enter thì xuất hiện 1 hình tròn ở vị trí bất kỳ trong trang web
+Nhấn các phím space thì xuất hiện 1 hình vuông ở vị trí bất kỳ trong trang web
+Nhấn các phím còn lại thì đổi màu background của trang web thành 1 màu bất kỳ
+Mỗi lần nhấn phím chỉ có 1 hình được xuất hiện (hình tròn hoặc hình vuông tùy thuộc vào phím được bấm)
+Bài 2
+
+Tạo 1 hình tròn trong trang web (có thẻ sử dụng html hoặc tạo bằng javascript)
+Lắng nghe sự kiện khi người dùng bấm vào các phím mũi tên để di chuyển hình tròn
+Phím mũi tên lên : Di chuyển hình tròn lên 20px;
+Phím mũi tên xuống : Di chuyển hình tròn xuống 20px;
+Phím mũi tên sang trái : Di chuyển hình tròn sang trái 20px;
+Phím mũi tên sang phải : Di chuyển hình tròn sang phải 20px;-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buoi4-lab1</title>
+    <style>
+        body {
+            margin: 0;
+        
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .shape {
+            position: absolute;
+        }
+        .circle {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .square {
+            width: 50px;
+            height: 50px;
+           
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <script src="buoi4-lab1.js"></script>
+</body>
+</html>
+
+
+
