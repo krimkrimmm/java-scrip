@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>buoi5-lab1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+           
+            background: #d3cce3;
+        }
+        .testimonials-container {
+            text-align: center;
+            padding: 50px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .text {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .name {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .authors-container 
+        {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .author {
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .author img 
+        {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .author.selected img {transform: scale(1.2);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="testimonials-container" id="testimonials">
+        <i class="fas fa-quote-left"></i>
+        <p class="text" id="quote">Click a user to see their quote</p>
+        <strong class="name" id="name">User Name</strong>
+        <div class="authors-container" id="authors"></div>
+    </div>
+    <script src="./buoi5-lab1.js"> </script>
+
+</body>
+</html>
