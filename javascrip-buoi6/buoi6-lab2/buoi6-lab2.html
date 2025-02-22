@@ -1,0 +1,49 @@
+<!--MEAL API
+1. Danh sách API
+1. Lấy danh sách meal
+GET https://www.themealdb.com/api/json/v1/1/search.php?s=tu_khoa_can_tim
+
+2. Lấy chi tiết meal theo id
+
+GET https://www.themealdb.com/api/json/v1/1/lookup.php?i=meal_id_can_tim
+3. Lấy ngẫu nhiên meal
+GET https://www.themealdb.com/api/json/v1/1/random.php
+Học viên tiến hành test API để kiểm tra xem từng API trả về dữ liệu như thế nào
+2. Template
+Học viên tham khảo template tại đây : https://gist.github.com/buihien0109/d2fdc841a61a3f85725a846d272a09aa.js
+
+
+
+
+3. Yêu cầu chức năng
+1. Lấy danh sách meal theo tên danh sách món ăn
+2. Lấy chi tiết meal theo id
+3. Lấy ngẫu nhiên danh sách meal
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buoi6-lab2</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>    
+    <h1>Meal API</h1>
+    <input type="text" id="search" placeholder="Nhập tên món ăn...">
+    <button onclick="searchMeals()">Tìm kiếm</button>
+    
+    <button onclick="getRandomMeal()">Món ăn ngẫu nhiên</button>
+    <div id="meal-list"></div>
+    <div id="meal-detail"></div>
+
+    <script src="./buoi6-lab2.js"></script>
+</body>
+</html>
+
+ 
+
+
+

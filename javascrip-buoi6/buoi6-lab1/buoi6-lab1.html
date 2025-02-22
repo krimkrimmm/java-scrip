@@ -1,0 +1,68 @@
+<!--PROVINCE API
+Danh sách API
+API lấy danh sách các tỉnh (province)
+GET : https://provinces.open-api.vn/api/p/
+Lấy danh sách quận huyện (district)
+GET : https://provinces.open-api.vn/api/p/${provinceCode}?depth=2
+
+Lấy danh sách xã phường
+GET : https://provinces.open-api.vn/api/d/${districtCode}?depth=2
+Mã HTML tham khảo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <h2>Danh sách tỉnh thành phố</h2>
+    <select id="province"></select>
+    <select id="district"></select>
+    <select id="commune"></select>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+</html>
+Yêu cầu
+Vừa vào trang gọi API load danh sách tỉnh - thành phố (province) và hiển thị lên trên giao diện
+Khi người dùng chọn 1 tỉnh - thành phố (province) cụ thể thì tiếp tục gọi API để lấy danh sách quận - huyện (district) tương ứng với tỉnh - thành phố đã chọn trước đó
+Làm tương tự với xã phường (commune)
+-->
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách tỉnh thành</title>
+</head>
+<body>
+    <h2>Danh sách tỉnh thành phố</h2>
+    <label for="province">Tỉnh/Thành phố:</label>
+    <select id="province">
+        
+        <option value="">Chọn tỉnh/thành</option>
+    </select>
+    <label for="district">Quận/Huyện:</label>
+    <select id="district">
+        <option value="">Chọn quận/huyện</option>
+    </select>
+    <label for="commune">Xã/Phường:</label>
+    <select id="commune">
+        <option value="">Chọn xã/phường</option>
+   
+    </select>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./buoi6-lab1.js"></script>
+</body>
+</html>
+
+
+
+ 
+ 
+

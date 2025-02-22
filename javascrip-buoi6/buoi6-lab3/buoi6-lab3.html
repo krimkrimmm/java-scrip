@@ -1,0 +1,49 @@
+<!-- GithubUser API
+Danh sách API
+Tham khảo chi tiết GitHub User API tại đây : https://docs.github.com/en/rest/users
+1. Lấy danh sách user
+
+GET https://api.github.com/users
+
+2. Lấy thông tin của user
+
+GET https://api.github.com/users/{github_username}
+
+3. Lấy danh sách repo của user
+
+GET https://api.github.com/users/{github_username}/repos
+
+4. Lấy danh sách follower của user
+
+GET https://api.github.com/users/{github_username}/followers
+
+Học viên tiến hành test API để kiểm tra xem từng API trả về dữ liệu như thế nào
+
+2. Template
+Học viên tham khảo template tại đây : https://gist.github.com/buihien0109/ac0b65661fb31d1e3b466d8ee9c559c4
+
+3. Yêu cầu chức năng
+1. Lấy danh sách user (có phân trang)
+
+2. Tìm kiếm user theo tên (có phân trang)
+-->      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buoi6-lab3</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>      
+    <h1>GitHub User API</h1>
+    <input type="text" id="search" placeholder="Nhập tên người dùng GitHub...">
+    <button onclick="searchUsers(1)">Tìm kiếm</button>
+    <div id="user-list"></div>
+    <button id="load-more" style="display:none;" onclick="loadMoreUsers()">Tải thêm</button>
+    <script src="./buoi6-lab3.js"></script>
+</body>
+
+</html>
+
